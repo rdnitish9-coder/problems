@@ -1,0 +1,6 @@
+static int product(Node root){
+           if(root==null){
+               return 1;
+           }
+           return root.val * product(root.left)*product(root.right);
+       }
